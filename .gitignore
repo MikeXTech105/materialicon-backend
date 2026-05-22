@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Node Modules
+node_modules
+
+# Build
+dist
+build
+
+# IDE
+.vscode
+.idea
+
+# PM2
+.pm2
+
+# Coverage
+coverage
+
+# Temp
+tmp
+temp
+/.vs
