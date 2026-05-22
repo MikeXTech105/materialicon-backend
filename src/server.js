@@ -9,7 +9,7 @@ const startServer = async () => {
   try {
     await connectDatabase();
 
-    server = app.listen(env.port, () => {
+    server = app.listen(env.port,"0.0.0.0", () => {
       logger.info(`IconAPI server running on port ${env.port} in ${env.nodeEnv} mode`);
       logger.info(`Swagger documentation available at http://localhost:${env.port}/api-docs`);
     });
