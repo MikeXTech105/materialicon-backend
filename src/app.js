@@ -45,6 +45,17 @@ app.use('/storage', express.static(path.join(__dirname, '..', 'storage'), {
 app.use('/api/v1', routes);
 app.use('/api', routes);
 
+
+/* ---------------- React Build ---------------- */
+
+app.use(express.static(path.join(__dirname, '../dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
+/* ---------------- Error Handling ---------------- */
+
 app.use(notFound);
 app.use(errorConverter);
 app.use(errorHandler);

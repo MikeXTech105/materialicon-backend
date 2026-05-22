@@ -1,0 +1,1 @@
+import{c as e}from"./app-C6ZtiqgE.js";import{t}from"./axios-5ub2473k.js";var n=async()=>e((await t.get(`/public/categories`)).data).map(e=>({...e,id:e.id||e._id||e.slug||e.name,name:e.name||e.title||e.slug||`Untitled`,slug:e.slug||e.name,iconCount:e.iconCount||e.iconsCount||e.count||e.total||0,description:e.description||e.summary||``}));export{n as t};

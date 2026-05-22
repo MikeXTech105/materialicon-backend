@@ -1,0 +1,1 @@
+import{t as e}from"./axios-5ub2473k.js";var t=async()=>(await e.get(`/tags`)).data,n=async t=>(await e.post(`/tags`,t)).data,r=async(t,n)=>(await e.put(`/tags/${t}`,n)).data,i=async t=>(await e.delete(`/tags/${t}`)).data;export{r as i,i as n,t as r,n as t};

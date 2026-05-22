@@ -1,0 +1,1 @@
+import{t as e}from"./axios-5ub2473k.js";var t=async()=>(await e.get(`/categories`)).data,n=async t=>(await e.post(`/categories`,t)).data,r=async(t,n)=>(await e.put(`/categories/${t}`,n)).data,i=async t=>(await e.delete(`/categories/${t}`)).data;export{r as i,i as n,t as r,n as t};
