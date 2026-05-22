@@ -46,15 +46,15 @@ app.use('/api/v1', routes);
 app.use('/api', routes);
 
 
-/* ---------------- React Build ---------------- */
+// /* ---------------- React Build ---------------- */
 
-app.use(express.static(path.join(__dirname, '../dist')));
+// app.use(express.static(path.join(__dirname, '../dist')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../dist/index.html'));
+// });
 
-/* ---------------- Error Handling ---------------- */
+// /* ---------------- Error Handling ---------------- */
 
 app.use(notFound);
 app.use(errorConverter);
